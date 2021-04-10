@@ -6,7 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>nth Child</title>
   <style>
+    li {
+      padding: 0.25rem;
+      margin: 0.25rem;
+      list-style: none;
+    }
 
+    /* first-child */
+    li:first-child {
+      background: red;
+    }
+
+    /* last-child */
+    li:last-child {
+      background: red;
+    }
+
+    /* Position 3 */
+    li:nth-child(3) {
+      background: purple;
+    }
+
+    /* Every 3 */
+    /* 3 is the counter, 0 is the offset */
+    li:nth-child(3n+0) {
+      background: orange;
+    }
+
+    /* every 3 after 7 */
+    li:nth-child(3n+7) {
+      background: yellow;
+    }
+
+    /* Every odd */
+    li:nth-child(odd) {
+      background: #ccc;
+    }
+
+    /* Every even */
+    li:nth-child(even) {
+      background: #ddd;
+    }
+
+    /* COMMENT OUT BOTTOM 2 TO SEE EFFECTS */
   </style>
 </head>
 <body>
